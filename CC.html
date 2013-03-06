@@ -2,8 +2,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <title>Open Source Free Pet Website Template</title>
+    <title>Tacy Foundation</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="./jquery.cycle2.min.js"></script>
+    <script src="./jquery.cycle2.video.js"></script>
+    <style>
+        .cycle-slideshow
+        {
+            max-width: 640px;
+            margin: auto;
+        }
+        .cycle-slideshow > div
+        {
+            width: 100%;
+            height: 100%;
+        }
+        iframe, object, embed
+        {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <div id="wrapper">
@@ -25,9 +45,14 @@
                     <p>
                         <h2>
                             Composer's Circle</h2>
-                        Composers Circle, a new program begins in winter of 2013, and will be mentored by
+                        Composers Circle, a new program started in winter of 2013. The program is mentored by
                         high school students, to encourage original composition by children and teens.
                     </p>
+                </div>
+				<br/>
+				 <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-auto-height="640:450"
+                    data-cycle-slides=">a" data-cycle-youtube="true" data-cycle-youtube-autostart="false">
+                    <a href="http://www.youtube.com/v/0gSnJASyPh0?version=3&amp;hl=en_US&amp;rel=0">Composer's Circle</a>
                 </div>
             </div>
             <div id="right-column">
