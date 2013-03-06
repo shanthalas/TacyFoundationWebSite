@@ -10,7 +10,9 @@
     <script src="galleria-1.2.9.min.js"></script>
     <script>
         Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-        Galleria.run('#galleria');
+        Galleria.run('#galleria', {
+			autoplay: 5000 // will move forward every 5 seconds
+		});
     </script>
     <style>
         /* This rule is read by Galleria to define the gallery height: */#galleria
