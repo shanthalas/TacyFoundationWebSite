@@ -4,14 +4,42 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>Tacy Foundation</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        /* rotator in-page placement */
+        div.rotator
+        {
+            position: relative;
+            height: 600px;
+            display: none;
+        }
+        /* rotator css */
+        div.rotator ul li
+        {
+            float: left;
+            position: absolute;
+            list-style: none;
+        }
+        /* rotator image style */
+        div.rotator ul li img
+        {
+            border: 1px solid #ccc;
+            background: #FFF;
+        }
+        div.rotator ul li.show
+        {
+            z-index: 500;
+        }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="./jquery.cycle2.min.js"></script>
 </head>
 <body>
     <div id="wrapper">
         <div id="header">
             <div id="nav">
                 <a href="home.html" target="_self">Home</a> &nbsp;|&nbsp; <a href="Story.html">The Story</a>
-                &nbsp;|&nbsp; <a href="photo.html">Photo Gallery</a> &nbsp;|&nbsp; <a href="contactus.html">Contact
-                    Us</a> &nbsp;</div>
+                &nbsp;|&nbsp; <a href="photo.html">Photo Gallery</a> &nbsp;|&nbsp; <a href="contactus.html">
+                    Contact Us</a> &nbsp;</div>
             <div id="bg">
             </div>
         </div>
@@ -35,15 +63,18 @@
                         to get a copy of the CD when you make a donation that you can give this holiday
                         season. It makes a great gift for family, friends, teachers, bus drivers, and colleagues.
                         Contact the <a href="mailto:thetacyfoundation@ymail.com">Tacy Foundation</a> to
-                        make arrangements. If you'd like to donate online, click <a href="http://www.causes.com/causes/545524" target="_self">
-                            here</a>.</p>
+                        make arrangements. If you'd like to donate online, click <a href="http://www.causes.com/causes/545524"
+                            target="_self">here</a>.</p>
                 </div>
                 <p>
                     <br />
-                    <p>
-                        <img src="images/celebrate.jpg" alt="Tacy Gift" width="616" height="562" align="left"
-                            style="margin-right: 10px; margin-bottom: 10px;" /></p>
-                </p>
+                    <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="3000">
+                        <!-- empty element for pager links -->
+                        <div class="cycle-pager">
+                        </div>
+                        <img src="images/HolidayProject/Image1.jpg" />
+                        <img src="images/HolidayProject/Image2.jpg" />
+                    </div>
             </div>
             <div id="right-column">
                 <div class="sidebar">

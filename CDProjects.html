@@ -4,6 +4,34 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>Tacy Foundation</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        /* rotator in-page placement */
+        div.rotator
+        {
+            position: relative;
+            height: 600px;
+            display: none;
+        }
+        /* rotator css */
+        div.rotator ul li
+        {
+            float: left;
+            position: absolute;
+            list-style: none;
+        }
+        /* rotator image style */
+        div.rotator ul li img
+        {
+            border: 1px solid #ccc;
+            background: #FFF;
+        }
+        div.rotator ul li.show
+        {
+            z-index: 500;
+        }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="./jquery.cycle2.min.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -44,14 +72,19 @@
                             and staff who lost their lives</li>
                     </ul>
                 </div>
+                <br />
                 <p>
-                    <br />
-                    <p>
-                        <img src="images/gift.jpg" alt="Tacy Gift" width="682" height="336" align="left"
-                            style="margin-right: 10px; margin-bottom: 10px;" /></p>
-                    <p>
-                        <img src="images/Wishing_on_a_Melody_FINAL.jpg" alt="Tacy Gift" width="683" height="604"
-                            align="left" style="margin-right: 10px; margin-bottom: 10px;" /></p>
+                    <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="3000">
+                        <!-- empty element for pager links -->
+                        <div class="cycle-pager">
+                        </div>
+                        <img src="images/CDProject/Image1.jpg" />
+                        <img src="images/CDProject/Image2.jpg" />
+                        <img src="images/CDProject/Image3.jpg" />
+                        <img src="images/CDProject/Image4.jpg" />                       
+                        <img src="images/CDProject/Image6.jpg" />
+                        <img src="images/CDProject/Image7.jpg" />
+                    </div>
                 </p>
             </div>
             <div id="right-column">
