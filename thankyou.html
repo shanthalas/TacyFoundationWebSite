@@ -4,6 +4,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>Tacy Foundation</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- load jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <!-- load Galleria -->
+    <script src="galleria-1.2.9.min.js"></script>
+    <script>
+        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+        Galleria.run('#galleria');
+    </script>
+    <style>
+        /* This rule is read by Galleria to define the gallery height: */#galleria
+        {
+            height: 800px;
+            width: 620px;
+        }
+    </style>
 </head>
 <body>
     <div id="wrapper">
@@ -22,13 +37,18 @@
                     <span style="margin-left: 15px;"></span>
                 </div>
                 <div>
-                    <h2>
-                        National Institute of Health Hall of Hope</h2>
-                    <p>
-                        National Institutes of Health invites live music concerts by children and teens
-                        in the Clinical Research?s Hall of Hope. There are four concerts scheduled annually
-                        for staff and patients during lunch hour.
-                    </p>
+                    <div id="galleria">
+                        <img src="./images/ThankYouLetters/2013-03.jpg" />
+                         <img src="./images/ThankYouLetters/2013-02.jpg" />
+                          <img src="./images/ThankYouLetters/2013-01.jpg" />
+                           <img src="./images/ThankYouLetters/2012-03.jpg" />
+                         <img src="./images/ThankYouLetters/2012-02.jpg" />
+                          <img src="./images/ThankYouLetters/2012-01.jpg" />
+                           <img src="./images/ThankYouLetters/2011-04.jpg" />
+                            <img src="./images/ThankYouLetters/2011-03.jpg" />
+                         <img src="./images/ThankYouLetters/2011-02.jpg" />
+                          <img src="./images/ThankYouLetters/2011-01.jpg" />                      
+                    </div>
                 </div>
             </div>
             <div id="right-column">
@@ -49,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <div id="footer">
+       <div id="footer">
         </div>
     </div>
 </body>
